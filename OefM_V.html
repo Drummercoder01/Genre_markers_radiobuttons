@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Oef M/V</title>
+</head>
+<body>
+  
+  <!-- 
+  a) De name zorgt dat de radiobuttons met dezelfde name bij elkaar horen
+  
+  b) via label kun e ook een radiobutton selecteren dankzij de for, die verwijs naar de id van een bijbehorende input
+  
+  c) checked is degene die default aangevinkt is 
+  
+  -->
+  <label for="man">man</label>
+  
+  <input type="radio" id="man" name="geslacht" checked><br>
+  
+  <label for="vrouw">vrouw</label>
+  
+  <input type="radio" id="vrouw" name="geslacht"><br>
+  
+  <input type="button" value="Check" onclick="controleer()">
+  
+  
+  <script>
+      
+      let vrouw = document.getElementById("vrouw");
+      
+      function controleer(){
+          
+          if(vrouw.checked == true){
+              
+             alert("Hallo Mevrouw");
+              
+             }else{
+                 
+                 alert("Hallo Meneer");
+                 
+             }
+          
+          
+      }
+    
+
+    
+    </script>
+   
+   
+    
+</body>
+</html>
